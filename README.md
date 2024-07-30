@@ -57,35 +57,35 @@ git clone https://github.com/swathipasham/GeoLocationApiAssignment.git
 docker-compose build
 
 ### Setup the Database:**
-For Development Environment:
+- For Development Environment:
 
 docker-compose run web rails db:create
 
 docker-compose run web rails db:migrate
 
-For Test Environment:
+- For Test Environment:
 
 docker-compose run web rails db:create RAILS_ENV=test
 
 docker-compose run web rails db:migrate RAILS_ENV=test
 
 ### Add Environment Variables:**
-Set IPSTACK_API_KEY and API_TOKEN for authorization in your environment variables.
+- Set IPSTACK_API_KEY and API_TOKEN for authorization in your environment variables.
 
 ### Start the Application:**
 
 docker-compose up
 
 ### Running Tests**
-To run the test suite:
+- To run the test suite:
 
-docker-compose run web rspec
+  docker-compose run web rspec
 
 
 ### Geolocation API**
 This RESTful API manages geolocation data based on IP address or URL.
 
-### Features**
+### Features
 
 - Create Geolocation: Create geolocation by fetching data from the ser ice provider based on a given IP address or URL.
 - Fetch Geolocation by ID: Retrieve geolocation data using a specific Geolocation ID.
