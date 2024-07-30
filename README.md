@@ -9,7 +9,7 @@ Need to write a simple API backed by any kind of database. The application shoul
 geolocation data in the database, based on IP address or URL. You can use https://ipstack.com/ as a
 service provider for geolocation data. The API should be able to add, delete or provide geolocation data on
 the base of ip address or URL.
-Application specification:
+## Application specification:
 It should be a RESTful API
 Keep it mind that the geolocation module should be written in the way that in the future it should be easy to
 change the service provider.
