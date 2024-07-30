@@ -1,7 +1,5 @@
 # README
 
-# README
-
 # GeoLocation API Documentation
 
 ## **Prerequisites**
