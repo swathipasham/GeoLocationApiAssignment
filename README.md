@@ -2,6 +2,31 @@
 
 # GeoLocation API Documentation
 
+# Requirement
+
+Testing Task - Ruby API - Geolocation with external integration
+Need to write a simple API backed by any kind of database. The application should be able to store
+geolocation data in the database, based on IP address or URL. You can use https://ipstack.com/ as a
+service provider for geolocation data. The API should be able to add, delete or provide geolocation data on
+the base of ip address or URL.
+Application specification:
+It should be a RESTful API
+Keep it mind that the geolocation module should be written in the way that in the future it should be easy to
+change the service provider.
+It is preferable that the API operates using JSON (for both input and output). Ideally it should follow JSON
+API standard.
+The solution should also include base specs/tests coverage. If you don’t have enough time, write complete
+specs for selected endpoint or module.
+As a bonus you can make all endpoints secure, not available to public.
+
+How to submit: Create a public Git repository and share the link with us
+Notes:
+Pay special attention to handling errors and edge cases. We will test the behavior of the system under
+various “unfortunate” conditions.
+We will run the application on our local machines for testing purposes. This implies that the solution should
+provide a quick and easy way to get the system up and running, including test data (hint: you can add
+Docker support so we can run it easily)
+
 ## **Prerequisites**
 To run this application, you need the following:
 - **Ruby**: 3.2.2
