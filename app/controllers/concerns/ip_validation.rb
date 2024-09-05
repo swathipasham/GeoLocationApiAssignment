@@ -27,14 +27,15 @@ module IpValidation
 
   # Validates the URl and  Resolves the URL to IP address
   def resolve_url_to_ip(url)
-    uri = URI.parse(url)
-    return false if uri.host.nil?
+   return false if url.blank?
 
-    begin
+   begin
+     uri = URI.parse(url)
+     return false if uri.host.nil?
+
       Addrinfo.getaddrinfo(uri.host, nil).first.ip_address
-      true
-    rescue SocketError
-      false
+   rescue SocketError
+     false
     end
   rescue URI::InvalidURIError
     false
